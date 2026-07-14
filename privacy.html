@@ -24,8 +24,8 @@
 <tr><td>소셜 로그인 정보</td><td>Apple/Google 로그인 시 제공되는 계정 식별자, 이메일(선택 제공 시)</td><td>계정 연동 및 기기 간 데이터 복구</td></tr>
 <tr><td>게임 데이터</td><td>점수, 게임 진행도, 보유 재화·스킨, 업적, 설정</td><td>클라우드 저장, 서비스 제공</td></tr>
 <tr><td>기기 정보</td><td>기기 모델, OS 버전, 언어, 앱 버전</td><td>호환성, 오류 분석</td></tr>
-<tr><td>광고 식별자(IDFA)</td><td>iOS 앱 추적 투명성(ATT) <strong>동의 시에만</strong> 수집</td><td>맞춤 광고 제공, 광고 빈도 제한, 부정 방지</td></tr>
-<tr><td>결제 정보</td><td>인앱 구매 영수증(Apple 발행)</td><td>구매 검증 및 아이템 지급 (카드 정보에는 접근하지 않음)</td></tr>
+<tr><td>광고 식별자</td><td>iOS: 앱 추적 투명성(ATT) <strong>동의 시에만</strong> IDFA 수집 · Android: Google 광고 ID(AD_ID) 수집</td><td>맞춤 광고 제공, 광고 빈도 제한, 부정 방지</td></tr>
+<tr><td>결제 정보</td><td>인앱 구매 영수증(Apple App Store / Google Play 발행)</td><td>구매 검증 및 아이템 지급 (카드 정보에는 접근하지 않음)</td></tr>
 </table>
 
 <h2>2. 제3자 서비스</h2>
@@ -35,6 +35,7 @@
 <li><strong>Unity LevelPlay / ironSource</strong> — 광고 제공 (<a href="https://unity.com/legal/privacy-policy" target="_blank">방침</a>)</li>
 <li><strong>Unity Analytics</strong> — 게임 플레이 분석 (<a href="https://unity.com/legal/privacy-policy" target="_blank">방침</a>)</li>
 <li><strong>Apple App Store</strong> — 결제 처리 (<a href="https://www.apple.com/legal/privacy/" target="_blank">방침</a>)</li>
+<li><strong>Google Play</strong> — 결제 처리 (Android) (<a href="https://policies.google.com/privacy" target="_blank">방침</a>)</li>
 </ul>
 
 <h2>3. 보관 및 파기</h2>
@@ -44,7 +45,7 @@
 <p>게임은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
 
 <h2>5. 이용자의 권리</h2>
-<p>이용자는 자신의 정보에 대한 열람·정정·삭제를 요청할 수 있습니다. 광고 식별자 수집은 iOS 설정(설정 → 개인정보 보호 → 추적)에서 언제든 철회할 수 있습니다.</p>
+<p>이용자는 자신의 정보에 대한 열람·정정·삭제를 요청할 수 있습니다. 광고 식별자는 iOS 설정(설정 → 개인정보 보호 → 추적)에서 추적을 철회하거나, Android 설정(설정 → Google → 광고)에서 광고 ID를 재설정·삭제할 수 있습니다. 계정 삭제 절차는 <a href="account-deletion.html">계정 삭제 안내</a>를 참고하세요.</p>
 
 <h2>6. 문의</h2>
 <p>개인정보 관련 문의: <a href="mailto:whyplanet.dev@gmail.com">whyplanet.dev@gmail.com</a></p>
@@ -63,12 +64,12 @@
 <li><strong>Social sign-in data</strong> — when you sign in with Apple or Google, we receive the account identifier and email (if you choose to share it) to link your progress across devices.</li>
 <li><strong>Game data</strong> — scores, progress, virtual currency, skins, achievements, and settings, stored on our servers for cloud save.</li>
 <li><strong>Device information</strong> — device model, OS version, language, and app version, for compatibility and error analysis.</li>
-<li><strong>Advertising identifier (IDFA)</strong> — collected <strong>only if you allow tracking</strong> via the iOS App Tracking Transparency prompt; used for ad delivery, frequency capping, and fraud prevention.</li>
-<li><strong>Purchase receipts</strong> — issued by Apple, used solely to verify purchases and grant items. We never access your payment card details.</li>
+<li><strong>Advertising identifier</strong> — on iOS, the IDFA is collected <strong>only if you allow tracking</strong> via the App Tracking Transparency prompt; on Android, the Google Advertising ID (AD_ID) is collected. Used for ad delivery, frequency capping, and fraud prevention.</li>
+<li><strong>Purchase receipts</strong> — issued by the Apple App Store or Google Play, used solely to verify purchases and grant items. We never access your payment card details.</li>
 </ul>
 
 <h2>2. Third-Party Services</h2>
-<p>The game uses Supabase (server hosting), Unity LevelPlay/ironSource (advertising), Unity Analytics (gameplay analytics), and Apple App Store (payments). Each processes data under its own privacy policy, linked above.</p>
+<p>The game uses Supabase (server hosting), Unity LevelPlay/ironSource (advertising), Unity Analytics (gameplay analytics), Apple App Store (payments on iOS), and Google Play (payments on Android). Each processes data under its own privacy policy, linked above.</p>
 
 <h2>3. Retention &amp; Deletion</h2>
 <p>Data is retained while you use the service. You can permanently delete your account and all associated data at any time in-game via <strong>Settings → Account → Delete Account</strong>. Deletion takes effect immediately on our servers.</p>
@@ -77,7 +78,7 @@
 <p>The game is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
 
 <h2>5. Your Rights</h2>
-<p>You may request access, correction, or deletion of your data. You can withdraw tracking consent at any time in iOS Settings → Privacy &amp; Security → Tracking.</p>
+<p>You may request access, correction, or deletion of your data. You can withdraw tracking consent at any time in iOS Settings → Privacy &amp; Security → Tracking, or reset/delete your advertising ID in Android Settings → Google → Ads. See <a href="account-deletion.html">Account Deletion</a> for the deletion procedure.</p>
 
 <h2>6. Contact</h2>
 <p>For privacy inquiries: <a href="mailto:whyplanet.dev@gmail.com">whyplanet.dev@gmail.com</a></p>
