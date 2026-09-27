@@ -44,3 +44,12 @@ th { background: rgba(255, 184, 77, 0.07); color: var(--ink); }
 a { color: var(--amber); }
 .lang-divider { margin: 44px 0 28px; border-top: 1px dashed rgba(255, 255, 255, 0.2); padding-top: 24px; }
 footer { text-align: center; color: var(--ink-dim); font-size: 13px; margin-top: 32px; }
+.biz { font-size: 12.5px; line-height: 1.8; margin-bottom: 10px; word-break: keep-all; }
+.biz span { display: inline-block; margin-right: 12px; }
+.biz b { font-weight: 500; color: var(--ink); }
+@media (max-width: 480px) {
+  .wrap { padding: 36px 16px 64px; }
+  .card { padding: 24px 18px; }
+  table { font-size: 13px; }
+  th, td { padding: 7px 8px; word-break: keep-all; overflow-wrap: anywhere; }
+}
